@@ -1,81 +1,22 @@
 n = int(input())
 a = 0
 b = 0
-num = 0
+num = 1
 m = 0
 
 if not (0 <= n <=99):
     exit()
 
+m = n # 새로운 변수에 처음 숫자를 넣어서 돌려야하는데
+# 돌리는 곳 안에 새로운 변수 넣고 해서 무한으로 루프가 돌아갔었음 ㅠㅡㅠ
 while True:
     b = n % 10
     a = int(n / 10)
-    m = a + b
-    c = int(m / 10)
-    a = c
+    c = a + b
+    n = (b * 10) + c % 10
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    while n != m:
-        num = num + 1
-        c = int(a) + int(b)
-        if c >= 10:
-            c = c - 10
-        a = c    
-        m = str(b)+str(a)
-        a = m[0]
-        b = m[1]
-    print(num)  
-
-
-
-
-if int(n) >= 0 and int(n) < 10:
-    a = 0
-    b = n[0]
-    num = 0
-    m = '0'
-    num = num + 1
-    c = int(a) + int(b)
-    a = c    
-    m = str(b)+str(a)
-    a = m[0]
-    b = m[1]
-    while True:
-        num = num + 1
-        c = int(a) + int(b)
-        if c >= 10:
-            c = c - 10
-        a = c    
-        m = str(b)+str(a)
-        a = m[0]
-        b = m[1]
-        if n == m:
-            break
-    print(num)    
-elif int(n) >=10 and int(n) <= 99:
-    a = n[0]
-    b = n[1]
-    num = 0
-    m = '0'
-    while n != m:
-        num = num + 1
-        c = int(a) + int(b)
-        if c >= 10:
-            c = c - 10
-        a = c    
-        m = str(b)+str(a)
-        a = m[0]
-        b = m[1]
-    print(num)   
+    if (n == m):
+        break
+    else:
+        num += 1    
+print(num)
