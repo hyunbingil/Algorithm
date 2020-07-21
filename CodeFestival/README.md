@@ -86,3 +86,64 @@ d = {'height':180,'weight':78,'weight':84,'temparture':36,'eyesight':1}
 print(d['weight'])
 ```
 > 84
+
+## 📑 Q21. set은 어떻게 만드나요?
+: 헷갈ㄴㄴㄴㄴ
+### 💛 JS
+``` js
+var x = {1, 2, 3, 5, 6, 7};
+var x = {};
+var x = new Set('javascript'); // 틀림
+var x = new Set(range(5));
+var x = new Set(); // 틀림
+```
+### 💙 PYTHON
+``` py
+x = {1, 2, 3, 5, 6, 7}
+x = {} # 틀림
+x = set('python')
+x = set(range(5))
+x = set()
+```
+
+## 📑 Q22. 배수인지 확인하기
+: 나머지 연산자 사용하기
+``` js
+i % 6 == 0
+```
+
+## 📑 Q23. OX문제
+### 💛 JS
+```
+console.log(10/3)의 출력 결과는 3이다.
+```
+: X\
+> 출력 결과는 3.3333333333333335 이 나온다.\
+소숫점이 없는 정수를 출력하고자 할 때는 Math.floor() 함수를 쓰자.
+### 💙 PYTHON
+```
+console.log(10/2)의 출력 결과는 5이다.
+```
+: X\
+> 출력 결과는 5.0이다.\
+소숫점이 없는 정수를 출력하고자 할 때는 int() 사용하기.
+
+## 📑 Q31. 자료형의 복잡도(왜 아닌지 모르겠음.......!)
+### 💛 JS
+: 배열 내장함수의 시간 복잡도가 O(1)인 것들.
+``` js
+arr[i]
+arr.push(5)
+arr.slice() // 아님
+arr.pop()
+arr.includes(5) // 아님
+```
+### 💙 PYTHON
+: 리스트의 내장함수의 시간 복잡도가 O(1)인 것들.
+``` py
+l[i]
+l.append(5)
+l[a:b] # 아님
+l.pop()
+l.clear()
+```
