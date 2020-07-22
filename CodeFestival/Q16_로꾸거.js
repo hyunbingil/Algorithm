@@ -1,5 +1,5 @@
 let inp = prompt("문장을 입력해주세요. 뒤집어 드립니다.");
-console.log(input.split('').reverse().join(''));
+console.log(inp.split('').reverse().join(''));
 /*
 * split() 메서드는 문자열을 배열로 만들어 반환하고,
 * reverse() 메서드는 배열의 순서를 반전하며,
