@@ -355,3 +355,22 @@ def get_weekday(day):
 
 print(get_weekday(get_total_day(2020, 1, 30)))
 ```
+
+## 📑 Q42. getTime(), time 함수 사용
+: 지금의 year 구하기.
+### 💛 JS
+``` js
+const d = new Date();
+
+let year = d.getTime();
+year = Math.floor(year/(3600*24*365*1000))+1970
+
+console.log(year);
+```
+### 💙 PYTHON
+``` py
+import time
+t = time.time()
+t = int(t//(3600*24*365))+1970
+print(t)
+```
