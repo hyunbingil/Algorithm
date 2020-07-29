@@ -13,13 +13,13 @@
 > 주말엔 좀 쉬자 😭
 
 ### 🗝 CodeUp
-: 기초 100제
+: 기초 100제 🎟
 ```
 2020.07.13 ~ 2020.08.28(안에 끝낼 예정)
 ```
 
 ### 🗝 CodeFestival
-: Javascript 100제 + Python 100제\
+: Javascript 100제 + Python 100제 🎈\
 : Javascript와 Python이 헷갈려서 시작.
 > 같은 문제 풀면서 비교해보기.
 ```

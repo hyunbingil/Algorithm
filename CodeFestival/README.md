@@ -374,3 +374,21 @@ t = time.time()
 t = int(t//(3600*24*365))+1970
 print(t)
 ```
+
+## 📑 Q47. set 자료형의 응용
+: set은 중복을 허용하지 않는다.\
+=> 이 점을 이용하여 중복제거가 가능함.
+> list, object(dic) 등
+### 💛 JS
+- set로 만들기
+``` js
+let result = new Set();
+for (let key in people) {
+    result.add(people[key]);
+}
+```
+- ```result.size```\
+: size 는 set 객체 내 값의 개수를 반환함.
+### 💙 PYTHON
+- ```set()```\
+: set로 만들기
